@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="StepDefinitions\" />
+    <Folder Include="PageObjects\" />
+  </ItemGroup>
+
+  <!-- tells specflow where to find the feature files to auto-generate runtime code for -->
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\" />
+  </ItemGroup>
+</Project>
